@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio</title>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao meu Portfólio!</h1>
+        <button id="botao-tema" onclick="tema()">☽</button>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="scrollPara('.sobre')">Sobre</a></li>
+            <li><a href="#" onclick="scrollPara('.projetos')">Projetos</a></li>
+            <li><a href="#" onclick="scrollPara('.habilidades')">Habilidades</a></li>
+            <li><a href="#" onclick="scrollPara('.contato')">Contato</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="sobre">
+            <h2>Sobre mim</h2>
+            <p>Olá! Me chamo Amanda Versiani, sou aluna de Desenvolvimento de Sistema na Proz. Esse site é para uma atividade avaliativa, com o intuito de avaliar as linguagens que constituem esse site, sendo elas: HTML, Java Script e CSS.  </p> 
+            <p id="coracao">𖹭</p>
+            
+        </div>
+
+        <div class="projetos">
+            <h2>Projetos</h2>
+        </div>
+
+        <div class="habilidades">
+            <h2>Habilidades</h2>
+            <p>python</p>
+            <div class="barra python"></div>
+
+            <p>html</p>
+            <div class="barra html"></div>
+
+            <p>css</p>
+            <div class="barra css"></div>
+        </div>
+
+        <div class="contato">
+            <h2>Contato</h2>
+            <form onsubmit="mostrarAlerta(event)">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="exemplo@gmail.com" required>
+
+                <input type="text" name="mensagem" id="mensagem" placeholder="Digite sua mensagem" required>
+
+                <input type="submit" name="enviar" id="enviar">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>Desenvolvido por aaaa</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
