@@ -1,4 +1,4 @@
-// Função para alternar tema claro/escuro
+
 function tema() {
   const corpo = document.body;
   const botao = document.getElementById("botao-tema");
@@ -12,7 +12,6 @@ function tema() {
   }
 }
 
-// Função para scroll suave até o elemento
 function scrollPara(classe) {
   const elemento = document.querySelector(classe);
   if (elemento) {
@@ -20,7 +19,6 @@ function scrollPara(classe) {
   }
 }
 
-// Alerta no envio do formulário
 function mostrarAlerta(event) {
   event.preventDefault();
   alert("Formulário enviado com sucesso!");
